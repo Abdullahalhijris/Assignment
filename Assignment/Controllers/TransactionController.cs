@@ -24,6 +24,8 @@ namespace Assignment.Controllers
             try
             {
                 var result = await this.transaction.AddTransaction(transaction);
+
+                await this.transaction.SaveTransactionToFile(result);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -31,13 +33,15 @@ namespace Assignment.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpDelete]
-
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTransaction(int id)
         {
             try
             {
+                
                 var result = await this.transaction.DeleteTransaction(id);
+                
+
                 return Ok(result);
             }
             catch (Exception ex)
@@ -45,6 +49,7 @@ namespace Assignment.Controllers
                 return BadRequest(ex.Message);
             }
         }
+    
         [HttpGet]
         public async Task<IActionResult> GetTransactions()
         {

@@ -1,0 +1,14 @@
+TransactionID: 19
+Amount: 222
+BankName: strieeng
+Reference: 6212226873
+Timestamp: 1/18/2024 12:05:24 AM
+Location: streing
+------------------------------
+TransactionID: 20
+Amount: 2221
+BankName: dw
+Reference: 7728654142
+Timestamp: 1/18/2024 12:24:03 AM
+Location: dwdw
+------------------------------
