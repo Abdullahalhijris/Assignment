@@ -1,1 +1,1 @@
-You have to do migration befote run the program 
+You have to do migration before run the program 
